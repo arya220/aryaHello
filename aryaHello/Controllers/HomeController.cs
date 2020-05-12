@@ -23,6 +23,11 @@ namespace aryaHello.Controllers
             return View("Index",model);
         }
 
+        public IActionResult Test()
+        {
+            throw new InvalidOperationException("sorry, this is not supported");
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
