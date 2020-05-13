@@ -25,6 +25,7 @@ namespace aryaHello
 
         private static void MigrateDatabase(IWebHost host)
         {
+
             using (var scope=host.Services.CreateScope())
             {
                 var context = scope.ServiceProvider
